@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    /* background-color: cyan; */
+    margin: auto;
+    /* margin on both side will be equal  */
+}
+
+/* navbar styling */
+.navbar{
+    /* background-color: #5c5c3d; */
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    font-family:'Ubuntu' ,sans-serif;
+    padding: 25px 0;
+    /* to make the size of the navbar bigger */
+
+    transition: all 0.3 ease;
+}
+
+/* check this sticky in js file  */
+.navbar.sticky{
+    padding: 15px 0;
+    background-color: #5c5c3d;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items:center;
+    /* this aligns the items to the center horizontally */
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: #5c5c3d;
+    transition: all 0.3s ease;
+}
+
+
+.navbar.sticky .logo a span{
+    color: white;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3 ease;
+}
+
+.navbar .menu li a:hover{
+    color:#5c5c3d;
+}
+
+.navbar.sticky .menu li a:hover{
+    color:white;
+}
+
+/* menu btn styling  */
+.menu-btn{
+    cursor: pointer;
+    color:white;
+    font-size: 23px;
+    display: none;
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+    /* this moves the name to left side  */
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color:#5c5c3d;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    background-color: #5c5c3d;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #5c5c3d;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    background: none;
+    color: #5c5c3d;
+}
+
+/* all similar styling code  */
+section .title{
+    position: relative; 
+    /* relative the postion will not be taken by other */
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px; 
+    padding-top:60px;  
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    /*absolute postion will be taken by other  */
+    bottom: 0px;
+    /* this brings the line to the bottom of the above text  */
+    left: 50%;
+    /* this makes the line at the center  */
+    width: 180px;
+    /* length of the line  */
+    height: 3px;
+    /* thickiness of the line  */
+    background-color:black;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: #5c5c3d;
+    background-color:white;
+    transform: translateX(-50%);
+}
+
+/* about section styling  */
+
+.about, .services, .skills{
+    font-family: 'Poppings', sans-serif;
+    padding-bottom: 60px;
+}
+
+
+.about .title::after{
+    content:"who i am";
+}
+
+.about .about-content, .services .services-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: #5c5c3d;
+}
+
+.about .about-content .right .text p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    background-color: #5c5c3d;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #5c5c3d;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.about .about-content .right a:hover{
+    color:#5c5c3d;
+    background: none;
+}
+
+
+/* services section start  */
+.services .title::after{
+    content: "what I provide";
+    background-color: black;
+}
+
+.services{
+    color: white;
+    background-color: black;
+}
+
+.services .title::before{
+    background-color: white;
+}
+
+.services .services-content .card{
+    background-color: rgb(31, 27, 27);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.services .services-content .card i{
+    color: #5c5c3d;
+    font-size: 50px;
+    
+}
+
+.services .services-content .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+    
+}
+
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+    
+}
+
+.services .services-content .card:hover{
+    background-color: #5c5c3d;
+}
+
+.services .services-content .card:hover i{
+    color: white;
+}
+.services .services-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+
+/* skills section styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query start  */
+
+@media (max-width: 1120px){
+
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+
+
+}
+
+@media (max-width:1047px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+        /* here f00d is the cross symbol and before is the attribute of content */
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .services .services-content .card{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 932px){
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-content .column{
+        width: 50%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex:100%;
+    }
+
+    
+
+
+}
+
+@media (max-width:690px){
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+
+    .max-width{
+        padding: 0 25px;
+    }
+
+    .home .home-content a{
+        font-size: 25px;
+        padding: 9px 20px;
+    }
+
+    .services .services-content .card{
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width:500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+
+    .max-width{
+        padding: 0 10px;
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
