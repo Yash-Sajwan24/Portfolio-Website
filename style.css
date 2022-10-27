@@ -215,17 +215,20 @@ section .title::after{
 }
 
 /* about section styling */
+
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
+    position: relative;
+    left: 100px;
 }
 .about .about-content .right{
     width: 55%;
@@ -270,19 +273,36 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "connect with me";
 }
+
+/* change for plates  */
+
+.card a{
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.card img{
+    height: 90px;
+}
+
+.card a:hover{
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(25% - 10px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: lightcoral;
+    background: white;
+    color: lightcoral;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -306,8 +326,9 @@ section .title::after{
 
 /* skills section styling */
 
+
 .skills .title::after{
-    content: "what i know";
+    content: "what I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -380,8 +401,16 @@ section .title::after{
 }
 
 /* teams section styling */
+
+.text2 img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .teams .title::after{
-    content: "who with me";
+    content: "what I made";
 }
 .teams .carousel .card{
     background: #222;
@@ -390,6 +419,7 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    height: 400px;
 }
 .teams .carousel .card:hover{
     background: lightcoral;
@@ -409,6 +439,20 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+.teams .carousel .card:hover .text{
+    font-weight: 600;
+}
+
+.teams .carousel .card p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card:hover .text2{
+    color: white;
+}
 .teams .carousel .card img{
     height: 150px;
     width: 150px;
@@ -418,7 +462,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: white;
 }
 .owl-dots{
     text-align: center;
