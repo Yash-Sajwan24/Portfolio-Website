@@ -16,8 +16,7 @@ html{
 /* scrolling transtion  */
 .hidden{
     opacity: 0;
-    filter: blur(0.5px);
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .left1{
@@ -33,6 +32,8 @@ html{
     filter: blur(0px);
     transform: translateX(0);
 }
+
+
 
 
 
@@ -573,6 +574,15 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    .hidden{
+        transition: none;
+    }
+    .left1{
+        transform: translateX(0px);
+    }
+    .right1{
+        transform: translateX(0px);
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -638,6 +648,7 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    
     .max-width{
         padding: 0 23px;
     }
