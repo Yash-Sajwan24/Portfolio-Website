@@ -13,7 +13,25 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
+
+        //scroll animation termination
+        var count=1;
+
+        $(window).on('scroll', function() {
+            if(count===1){
+                if ($(window).scrollTop() >= $(
+                    ".contact").offset().top - window.innerHeight+300) {
+                    $(".hidden").removeClass("right1");
+                    $(".hidden").removeClass("left1");
+                    $(".hidden").removeClass("hidden");
+                    count=0;
+                }
+            }
+        });
+
     });
+
+
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -86,4 +104,6 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements= document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+
 
