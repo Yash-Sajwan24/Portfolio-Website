@@ -13,10 +13,10 @@ html{
 }
 
 
-/* scrolling transtion  */
+/* scrolling transtion --------------------------------- */
 .hidden{
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease;  
 }
 
 .left1{
@@ -63,11 +63,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .socialss, .skills, .projectss, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.socialss .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -289,16 +289,16 @@ section .title::after{
 }
 
 /* Socials section styling */
-.services, .teams{
+.socialss, .projectss{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.socialss .title::before,
+.projectss .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.socialss .title::after,
+.projectss .title::after{
     background: #111;
     content: "connect with me";
 }
@@ -320,33 +320,33 @@ section .title::after{
     color: white;
 }
 
-.services .serv-content .card{
+.socialss .serv-content .card{
     width: calc(25% - 10px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
-    transition: all 0.3s ease;
+    
 }
-.services .serv-content .card:hover{
+.socialss .serv-content .card:hover{
     background: lightcoral;
     color: lightcoral;
 }
-.services .serv-content .card .box{
+.socialss .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.socialss .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.socialss .serv-content .card i{
     font-size: 50px;
     color: lightcoral;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.socialss .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.socialss .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -372,10 +372,10 @@ section .title::after{
   width: 50%;
 }
 
-.teams .title::after{
+.projectss .title::after{
     content: "what I made";
 }
-.teams .carousel .card{
+.projectss .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -384,39 +384,39 @@ section .title::after{
     transition: all 0.3s ease;
     height: 400px;
 }
-.teams .carousel .card:hover{
+.projectss .carousel .card:hover{
     background: lightcoral;
 }
-.teams .carousel .card .box{
+.projectss .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.projectss .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.projectss .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card:hover .text{
+.projectss .carousel .card:hover .text{
     font-weight: 600;
 }
 
-.teams .carousel .card p{
+.projectss .carousel .card p{
     font-size: 14px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card:hover .text2{
+.projectss .carousel .card:hover .text2{
     color: white;
 }
-.teams .carousel .card img{
+.projectss .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -424,7 +424,7 @@ section .title::after{
     border: 5px solid lightcoral;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.projectss .carousel .card:hover img{
     border-color: white;
 }
 .owl-dots{
@@ -636,7 +636,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .socialss .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -661,7 +661,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .socialss .serv-content .card{
         width: 100%;
     }
 }
