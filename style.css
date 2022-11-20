@@ -372,17 +372,18 @@ section .title::after{
   width: 50%;
 }
 
+
 .projectss .title::after{
     content: "what I made";
 }
 .projectss .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 25px 20px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
-    height: 400px;
+    height: 450px;
 }
 .projectss .carousel .card:hover{
     background: lightcoral;
