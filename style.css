@@ -321,10 +321,11 @@ section .title::after{
 }
 
 .card img{
-    height: 130px;
+    height: 120px;
+    width: 120px;
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 14px;
 }
 
 .card:hover a{
@@ -386,6 +387,12 @@ section .title::after{
     margin:2px;
     background-color: white;
     /* padding: 2px; */
+}
+
+.skilllist img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
 }
 
 /* Projects section styling */
@@ -652,6 +659,9 @@ footer span a:hover{
     }
     .max-width{
         max-width: 930px;
+    }
+    .about{
+        text-align: center;
     }
     .about .about-content .column{
         width: 100%;
