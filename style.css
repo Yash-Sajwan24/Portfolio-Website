@@ -12,7 +12,7 @@ html{
 }
 
 
-/* scrolling transtion --------------------------------- */
+/* scrolling transtion ---------------------------------
 .hidden{
     opacity: 0;
     transition: all 0.2s ease;  
@@ -30,7 +30,7 @@ html{
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
-}
+} */
 
 
 
@@ -602,7 +602,7 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    .hidden{
+    /* .hidden{
         transition: none;
     }
     .left1{
@@ -610,7 +610,7 @@ footer span a:hover{
     }
     .right1{
         transform: translateX(0px);
-    }
+    } */
     .menu-btn{
         display: block;
         z-index: 999;
@@ -624,7 +624,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #9446FC;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
