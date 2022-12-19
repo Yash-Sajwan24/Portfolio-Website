@@ -14,21 +14,6 @@ $(document).ready(function () {
             $('.scroll-up-btn').removeClass("show");
         }
 
-        // //scroll animation termination
-        // var count=1;
-
-        // $(window).on('scroll', function() {
-        //     if(count===1){
-        //         if ($(window).scrollTop() >= $(
-        //             ".contact").offset().top - window.innerHeight+300) {
-        //             $(".hidden").removeClass("right1");
-        //             $(".hidden").removeClass("left1");
-        //             $(".hidden").removeClass("hidden");
-        //             count=0;
-        //         }
-        //     }
-        // });
-
     });
 
 
@@ -90,22 +75,24 @@ $(document).ready(function () {
     });
 });
 
-// scrolling transition
+// scroll reveal effect 
 
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('show');
-//         }
-//         else{
-//             entry.target.classList.remove('show');
-//         }
-//     });
-// });
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2000,
+    // delay: 100,
+    // reset: true,
+  });
+  
+//   sr.reveal(`.container`,{ delay: 900, origin: "bottom" });
+sr.reveal(`.text-1`);
+sr.reveal(`.text-2`, {delay: 200});
+sr.reveal(`.text-3`, {delay: 300});
+sr.reveal(`.title`), {delay: 50};
+ScrollReveal().reveal(`.tech`, {interval: 50});
 
-// const hiddenElements= document.querySelectorAll('.hidden');
-// hiddenElements.forEach((el) => observer.observe(el));
+
 
 
 
