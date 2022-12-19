@@ -364,8 +364,8 @@ section .title::after{
 
 .skilllist img:hover{
     cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.1s ease-in;
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
 }
 
 /* Projects section styling */

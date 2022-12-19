@@ -90,7 +90,6 @@ sr.reveal(`.text-1`);
 sr.reveal(`.text-2`, {delay: 200});
 sr.reveal(`.text-3`, {delay: 300});
 sr.reveal(`.title`), {delay: 50};
-ScrollReveal().reveal(`.tech`, {interval: 50});
 
 
 
