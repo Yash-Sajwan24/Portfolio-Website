@@ -11,6 +11,32 @@ html{
     overflow-x: hidden;
 }
 
+/* wavy scroll shape divider app  */
+.custom-shape-divider-bottom-1672585250 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672585250 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-bottom-1672585250 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1672585901 .shape-fill {
+    fill: #111111;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -35,6 +61,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+
 .about, .socialss, .skills, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
@@ -47,6 +74,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -169,7 +197,7 @@ section .title::after{
 .home{
     display: flex;
     background: url("./images/background.gif") no-repeat center;
-    background-size: cover;
+    background-size:cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -227,6 +255,9 @@ section .title::after{
 
 /* about section styling */
 
+.about{
+    padding-top: 60px;
+}
 .about .title::after{
     content: "who I am";
 }
@@ -461,6 +492,10 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
 }
+.contact{
+    padding-top: 0px;
+}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
