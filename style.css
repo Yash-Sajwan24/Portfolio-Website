@@ -11,6 +11,25 @@ html{
     overflow-x: hidden;
 }
 
+.person{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+
+.about-ani{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.about-animation{
+    position: absolute;
+    right: 5%;
+    z-index: -1;
+}
+
 /* wavy scroll shape divider app  */
 .custom-shape-divider-bottom-1672585250 {
     position: absolute;
@@ -197,6 +216,7 @@ section .title::after{
 .home{
     display: flex;
     background: url("./images/background.gif") no-repeat center;
+    /* background-color:#111111; */
     background-size:cover;
     height: 100vh;
     color: #fff;
