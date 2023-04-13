@@ -11,10 +11,19 @@ html{
     overflow-x: hidden;
 }
 
+.contact-lottie{
+    position: absolute;
+    left: 10%;
+    height: 200px;
+    width: 200px;
+}
+
 .person{
     position: absolute;
     right: 10%;
     top: 5%;
+    height: 600px;
+    width: 600px;
 }
 
 .about-ani{
@@ -632,11 +641,27 @@ footer span a:hover{
         height: 350px;
         width: 350px;
     }
+    
+    .person{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        height: 500px;
+        width: 500px;
+    }
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    }
+
+    .person{
+        position: absolute;
+        right: 7%;
+        top: 5%;
+        height: 400px;
+        width: 400px;
     }
 }
 @media (max-width: 947px){
@@ -716,7 +741,18 @@ footer span a:hover{
     }
 }
 
+@media (max-width: 880px){
+        .person{
+            z-index: -5; 
+        }
+    
+}
+
 @media (max-width: 690px) {
+    
+    .person{
+        z-index: -4;
+    }
     
     .max-width{
         padding: 0 23px;
@@ -736,6 +772,18 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+
+    .contact-lottie{
+        position: absolute;
+        left: 5%;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .person{
+        z-index: -5; 
+    }
+
     .home .home-content .text-2{
         font-size: 50px;
     }
